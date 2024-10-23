@@ -58,9 +58,10 @@
                 </div>
         </div>
         <footer>
-                <p class="title">&copy; Ibnu Hasan 2022</p>
+                    <p class="title">&copy; Ibnu Hasan <span id="currentYear"></span></p>
         </footer>
         <script>
+                document.getElementById("currentYear").textContent = new Date().getFullYear();
                 function redirInstagram() {
                         window.location.href = "https://instagram.com/ibnuhasan029"
                 }
